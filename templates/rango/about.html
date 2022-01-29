@@ -13,12 +13,15 @@
             Hey there partner!
             </br>
                 <strong>{{ boldmessage }}</strong>
+        </br>
+                <p1>{{signature}}</p1>
             <br />
         </div>
+
         <div>
-            <a href="/rango/about/">About</a><br />
-            <img src = "{%static 'images/rango.jpg' %}" 
-                 alt="Picture of rango" />
+            <a href="/rango/">Index</a><br />
+            <img src="{% static "images/rango.jpg" %}" alt="Picture of Rango" />
+            <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat." />
         </div>
     </body>
 </html>
